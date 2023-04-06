@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/index.css"/>
+        <script type="text/javascript" src="jvs/index.js"></script>
+    </head>
+    <body>
+        <h1 class="title">Welcome To Katik</h1>
+        <p class="subtitle">
+            Hai Sobat, Selamat datang di katik:] <br>
+            Sebuah web apps sederhana yang berfungsi untuk menghitung 
+            nilai luas dan keliling bangun datar
+        </p>
+        
+        <!-- Header / Navigation Bar -->
+        <header>
+            <div>
+                <div class="menu">
+                    <a class="menu-triangle" id="triangle" href="#triangle">Segitiga</a>
+                    <a id="parallelogram" href="#parallellogram">Jajar Genjang</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Page -->
+        <main>
+            <!-- Segitiga -->
+            <section id="triangle">
+                <!-- Luas Segitiga -->
+                <div class="shape-title">SEGITIGA</div>
+                <div class="card">
+                    <div class="form-rumus">
+                        <h1>Luas Segitiga</h1>
+                        <div class="img"><img src="assets/luassegitiga.jpg" alt=""></div>
+                        <div class="rumus">
+                            <div>
+                                <h3>Di mana:</h3>
+                                <p>L = Luas || a = Alas || Tinggi</p>
+                            </div>
+                            <div class="text-rumus">
+                                <h3>Rumus Luas</h3>
+                                <p>L = 1/2 x T x A</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vl"></div>
+                    <div class="form-hitung">
+                        <h2>Hitung Luas Segitiga</h2>
+                        <form action="" id="form-triangle-area" class="form-triangle-area" onsubmit="return false;">
+                            <input type="number" name="base-triangle" id="base-triangle" placeholder="Masukan Alas Segitiga" required>
+                            <input type="number" name="height-triangle" id="height-triangle" placeholder="Masukan Tinggi Segitiga" required>
+                            <div class="card-result">
+                                <h3>L = 1/2 x T x A</h3>
+                                <h3 id="resultTriangleArea">L = 1/2 x   x  </h3>
+                                <h3 id="calculateTriangleArea">L =   </h3>
+                            </div>
+                            <div class="align-button">
+                                <input type="submit" class="button-submit" onclick="calculateTriangleArea()" value="hitung"/>
+                                <button type="reset" class="button-reset" onclick="resetTriangleArea()">Reset</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- Keliling Segitiga -->
+                <div class="card">
+                    <div class="form-rumus">
+                        <h1>Keliling Segitiga</h1>
+                        <div class="img"><img src="assets/keliling-segitiga.jpg" alt=""></div>
+                        <div class="rumus">
+                            <div>
+                                <h3>Di mana:</h3>
+                                <p>K = Keliling</p>
+                                <p>s = sisi</p>
+                            </div>
+                            <div class="text-rumus">
+                                <h3>Rumus Luas</h3>
+                                <p>K = s + s + s</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vl"></div>
+                    <div class="form-hitung">
+                        <h2>Hitung Keliling Segitiga</h2>
+                        <form action="" class="form-triangle-circumference" onsubmit="return false;">
+                            <input type="number" name="side-triangle1" id="side-triangle1" placeholder="Masukan Sisi ke-1" required>
+                            <input type="number" name="side-triangle2" id="side-triangle2" placeholder="Masukan Sisi ke-2" required>
+                            <input type="number" name="side-triangle3" id="side-triangle3" placeholder="Masukan Sisi ke-3" required>
+                            <div class="card-result">
+                                <h3>K = s + s + s</h3>
+                                <h3 id="hasilsegitiga">K =   +    +   </h3>
+                                <h3 id="calculateTriangleCircumference">K =   </h3>
+                            </div>
+                            <div class="align-button">
+                                <input type="submit" class="button-submit" onclick="calculateTriangleCircumference()" value="Hitung">
+                                <button type="reset" class="button-reset" onclick="resetTriangleCircumference()">Reset</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Jajar Genjang -->
+            <section id="parallellogram">
+                <div class="shape-title">JAJAR GENJANG</div>
+                <!-- Luas Jajar Genjang -->
+                <div class="card">
+                    <div class="form-rumus">
+                        <h1>Luas Jajar Genjang</h1>
+                        <div class="img"><img src="assets/jajar-genjang.png" alt=""></div>
+                        <div class="rumus">
+                            <div>
+                                <h3>Di mana:</h3>
+                                <p>L = Luas</p>
+                                <p>a = Alas</p>
+                                <p>t = Tinggi</p>
+                            </div>
+                            <div class="text-rumus">
+                                <h3>Rumus Luas</h3>
+                                <p>L = a x t</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vl"></div>
+                    <div class="form-hitung">
+                        <h2>Hitung Luas Jajar Genjang</h2>
+                        <form action="" class="form-parallellogram-area" onsubmit="return false;">
+                            <input type="number" name="base-parallellogram" id="base-parallellogram" placeholder="Masukan Alas" required>
+                            <input type="number" name="height-parallellogram" id="height-parallellogram" placeholder="Masukan Tinggi" required>
+                            <div class="card-result">
+                                <h3>L = a x t</h3>
+                                <h3 id="resultParallellogramArea">L =   x    </h3>
+                                <h3 id="calculateParallellogramArea">L =   </h3>
+                            </div>
+                            <div class="align-button">
+                                <input type="submit" class="button-submit" onclick="calculateParallellogramArea()" value="Hitung">
+                                <button type="reset" class="button-reset" onclick="resetParallellogramArea()">Reset</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- Keliling Jajar Genjang -->
+                <div class="card">
+                    <div class="form-rumus">
+                        <h1>Keliling Jajar Genjang</h1>
+                        <div class="img"><img src="assets/jajar-genjang.png" alt=""></div>
+                        <div class="rumus">
+                            <div>
+                                <h3>Di mana:</h3>
+                                <p>K = Keliling</p>
+                                <p>a = Sisi A</p>
+                                <p>b = Sisi B</p>
+                                <p>t = Tinggi</p>
+                            </div>
+                            <div class="text-rumus">
+                                <h3>Rumus Keliling</h3>
+                                <p>K = 2 x (Sisi A + Sisi B)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vl"></div>
+                    <div class="form-hitung">
+                        <h2>Hitung Keliling Jajar Genjang</h2>
+                        <form action="" class="form-parallellogram-circumference" onsubmit="return false;">
+                            <input type="number" name="side-parallellogam-a" id="sideA" placeholder="Masukan Sisi A" required>
+                            <input type="number" name="side-parallellogam-b" id="sideB" placeholder="Masukan Sisi B" required>
+                            <div class="card-result">
+                                <h3>K = 2 x (Sisi A + Sisi B)</h3>
+                                <h3 id="formulaParallellogramCircumference">K = 2 x (  +  )</h3>
+                                <h3 id="resultParallellogramCircumference">K =   </h3>
+                            </div>
+                            <div class="align-button">
+                                <input type="submit" class="button-submit" onclick="calculateParallellogramCircumference()" value="Hitung"/>
+                                <button type="reset" class="button-reset" onclick="resetParallellogramCircumference()">Reset</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <a href="#" class="scroll-button">^</a>
+
+        <!-- Footer -->
+        <footer>
+            ®Copright 2023 bilqis app kwangya
+        </footer>
+    </body>
+</html>

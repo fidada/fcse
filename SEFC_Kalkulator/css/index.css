@@ -1,0 +1,184 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* BOddy */
+body:not(footer){
+    padding: 30px;
+    scroll-behavior: smooth;
+}
+
+/* Title */
+.title{
+    margin-top: 10px;
+    text-align: center;
+}
+.subtitle{
+    margin: 10px 0px;
+    text-align: center;
+}
+
+/* Header */
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 20px;
+    gap: 15px;
+}
+.menu > a{
+    text-decoration: none;
+    background-color: blue;
+    color: white;
+    padding: 10px 50px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+/* Main Content */
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* section */
+section{
+    margin-bottom: 60px;
+}
+
+/* TITLE */
+.shape-title{
+    background-color: blue;
+    color: white;
+    width: 100%;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+/* Card */
+.card{
+    border: 1px blue solid;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+/* image */
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}.img img{
+    height: 300px;
+}
+
+/* vertical line */
+.vl{
+    border-left: 3px solid blue;
+    height: 300px;
+}
+
+/* Align Rumus */
+.rumus{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 5px;
+}
+/* Rumus Text */
+.text-rumus p{
+    text-align: center;
+    font-weight: bold;
+}
+
+/* form triangle */
+.triangle, .parallellogram{
+    gap: 20px;
+}
+form{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+form > input{
+    padding: 8px 4px;
+    border-radius: 6px;
+    width: 100%;
+}
+
+/* align button */
+.align-button{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+}
+/* button submit */
+.button-submit{
+    padding: 8px 8px;
+    width: 100%;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+/* button reset */
+.button-reset{
+    align-self: end;
+    padding: 6px 12px;
+    background-color: none;
+    color: blue;
+    border: 3px blue solid;
+    border-radius: 3px;
+}
+
+/* card result  */
+.card-result{
+    position: relative;
+    align-items: end;
+    border: 3px blue solid;
+    padding: 8px 20px;
+}
+
+/* form hitung */
+.form-hitung{
+    width: 100%;
+}
+
+footer{
+    box-shadow: 0px -8px 39px -4px rgba(0,0,0,0.45);;
+    background-color: blue;
+    color: white;
+    padding: 20px;
+    margin-top: 50px;
+    margin-inline: -30px;
+    margin-block-end: -30px;
+}
+
+/* scrooll button */
+.scroll-button {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: blue;
+    bottom: 40px;
+    right: 50px;
+    text-decoration: none;
+  text-align: center;
+  line-height: 60px;
+  color: white;
+  font-size: 32px;
+  box-shadow: 3px -2px 43px 6px rgba(255, 255, 255, 0.75);
+}
